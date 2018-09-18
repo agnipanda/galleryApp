@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageComponent } from './image/image.component';
 import { FilterPipe } from './image/shared/filter.pipe';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from '../routes';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { FilterPipe } from './image/shared/filter.pipe';
     NavbarComponent,
     GalleryComponent,
     ImageComponent,
-    FilterPipe
+    FilterPipe,
+    ImageComponent
   ],
   imports: [
     BrowserModule,
     AlertModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]

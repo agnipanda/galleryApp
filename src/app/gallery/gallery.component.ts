@@ -12,7 +12,7 @@ export class GalleryComponent implements OnInit {
     this.visibleImages = this.imageService.getImages();
   }
 
-
+  filterBy = 'all';
   ngOnInit() {
   }
 
