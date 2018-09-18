@@ -7,13 +7,15 @@ import { AlertModule } from 'ngx-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageComponent } from './image/image.component';
+import { FilterPipe } from './image/shared/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     GalleryComponent,
-    ImageComponent
+    ImageComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
